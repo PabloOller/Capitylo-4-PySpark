@@ -3,10 +3,6 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
 
-# Crear una sesión de Spark
-from pyspark.sql import SparkSession
-
-
 spark = SparkSession.builder \
     .appName("Ejemplo") \
     .config("spark.sql.catalogImplementation", "hive") \
@@ -35,6 +31,7 @@ df = (spark.read.format("csv")
  .option("header", "true")
  .load(csv_file))
 df.createOrReplaceTempView("us_delay_flights_tbl")
+spark.sql("USE learn_spark_db")
 
 '''
 # In Python
@@ -56,7 +53,6 @@ spark.sql("SELECT * FROM us_origin_airport_JFK_tmp_view")
 
 #Creacion de una BBDD
 spark.sql("CREATE DATABASE IF NOT EXISTS learn_spark_db")
-spark.sql("USE learn_spark_db")
 
 #Creacion de sta tabla en la BBDD
 spark.sql("""
@@ -69,11 +65,16 @@ CREATE TABLE IF NOT EXISTS managed_us_delay_flights_tbl (
 )
 USING hive
 """)
-'''
+
 spark.catalog.listDatabases()
 spark.catalog.listTables()
-spark.catalog.listColumns("us_delay_flights_tbl")
+# spark.catalog.listColumns("us_delay_flights_tbl")
 
+
+us_flights_df = spark.sql("SELECT * FROM us_delay_flights_tbl")
+us_flights_df2 = spark.table("us_delay_flights_tbl")
+
+'''
 
 
 

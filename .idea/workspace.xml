@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5467142c-b570-41c0-be44-2fb17ec2a0eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Capitulo4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Ejemplo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Ejemplo1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/data/departuredelays.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/derby.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Ejemplo1.executor": "Run",
+    "Python.Ejemplo2.executor": "Run",
+    "Python.Images.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "preferences.pluginManager"
